@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delicious Pizza</title>
+	
+	
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<style>
+	body,h1,h5 {font-family: "Raleway", sans-serif}
+	body, html {height: 100%}
+	
+	.bgimg {
+	   text-align: center;
+	}
+    .title p {
+        color: white;
+        text-shadow: 10px 10px 10px black;
+        font-size: 750%;
+        text-align: center;
+        position: relative;
+        top: 100px;
+        
+    }
+    .bottom {
+    	font-size: 200%;
+        color: white;
+        text-shadow: 3px 3px 2px black;
+		position: relative;
+        bottom: -150px;
+        
+    }
+    .bgimg {
+	   background-image: url('http://blog.oxforddictionaries.com/wp-content/uploads/pizza.jpg');
+	   min-height: 50%;
+       height: 0%;
+	   background-position: center;
+	   background-size: cover;
+       background-repeat: no-repeat;
+	}
+	</style>
+</head>
+<body class="bgimg">
+	<div>
+		<div class="title">
+			<p>Delicious Pizza</p>
+		</div>
+		<div class="w3-display-topleft w3-container w3-xlarge">
+			<p><button class="w3-button w3-black" onclick="document.getElementById('menu').style.display='block'">menu</button></p>
+			<p><button class="w3-button w3-black" onclick="document.getElementById('contact').style.display='block'">contact</button></p>
+		</div>
+		<div class="bottom">
+			<p class="hours">monday - friday 10-23 | saturday 14-02</p>
+			<p class="location">42 village St, New York</p>
+			
+		</div>
+	
+	<div class="w3-modal" id="menu">
+		<div class="w3-modal-content w3-animate-zoom">
+			<div class="w3-container w3-black w3-display-container">
+				<span class="w3-button w3-display-topright w3-large" onclick="document.getElementById('menu').style.display='none'">x</span>
+				<h1>Drinks</h1>
+			</div>
+			<div class="w3-container">
+				<h5>Fountain Drink - <b>$1.50</b></h5>
+				<h5>Smoothie (Strawberry, Mango, or Chocolate) - <b>$3.50</b></h5>
+			</div>
+			<div class="w3-container w3-black">
+				<h1>Pizzas</h1>
+			</div>
+			<div class="w3-container">
+				<h5>Cheese Pizza - <b>Small $5.00, Medium $6.50, Large $8.00</b></h5>
+				<h5>Pepperoni Pizza - <b>Small $5.50, Medium $7.00, Large $8.50</b></h5>
+				<h5>Veggie Pizza - <b>Small $5.75, Medium $7.50, Large $9.00</b></h5>
+				<h5>Meatlovers Pizza - <b>Small $6.00, Medium $7.50, Large $10.00</b></h5>
+				<h5>Italian Pizza - <b>Small $5.75, Medium $7.00, Large $8.75</b></h5>
+				<h5>Tandoori Chicken Pizza - <b>Small $5.50, Medium $7.25, Large $8.50</b></h5>
+				<h5>Hawaiian Pizza - <b>Small $5.50, Medium $7.25, Large $8.75</b></h5>
+			</div>
+			<div class="w3-container w3-black">
+				<h1>Sides</h1>
+			</div>
+			<div class="w3-container">
+				<h5>Breadsticks - <b>$2.50</b></h5>
+				<h5>Chicken Wings - <b>$4.00</b></h5>
+				<h5>Dipping Sauce (Ranch, Chipotle, Jalapeno Garlic) - <b>$2.50</b></h5>
+				<h5>Marinara Sauce - <b>$1.50</b></h5>
+			</div>
+		</div>
+	</div>
+	<div class="w3-modal" id="contact">
+		<div class="w3-modal-content w3-animate-zoom">
+			<div class="w3-container w3-black">
+				<span class="w3-button w3-display-topright w3-large" onclick="document.getElementById('contact').style.display='none'">x</span>
+				<h1>Contact</h1>
+			</div>
+			<div class="w3-container">
+				<p>Reserve a table, ask for today's special or just send us a message:</p>
+				<form action="/action_page.php" target="_blank">
+					<p><input class="w3-input w3-padding-16 w3-border" name="Name" placeholder="Name" required="" type="text"></p>
+					<p><input class="w3-input w3-padding-16 w3-border" name="People" placeholder="How many people" required="" type="number"></p>
+					<p><input class="w3-input w3-padding-16 w3-border" name="date" placeholder="Date and time" required="" type="datetime-local" value="2017-11-16T20:00"></p>
+					<p><input class="w3-input w3-padding-16 w3-border" name="Message" placeholder="Message \ Special requirements" required="" type="text"></p>
+					<p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+				</form>
+			</div>
+		</div>
+	</div>
+    </div>
+</body>
+</html>
