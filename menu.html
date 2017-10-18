@@ -25,13 +25,14 @@ li a {
 li a:hover {
     background-color: #0343ad;
 }
-body {
-	background-image: url('http://blog.oxforddictionaries.com/wp-content/uploads/pizza.jpg');
-	background-repeat: no-repeat;
-	background-size: 110%;
-    min-size: 100%;
+html { 
+  background: url('http://www.florencepizza.ca/pizza/ProductImages/02fe668d-9e7b-486c-972e-dd83a29eaae92af14077-1e4e-4986-beb0-b7438f21b19cBest-Pizza.jpeg') no-repeat center fixed; 
+  background-size: cover;
 }
-h1 {
+body {
+	color: white;
+}
+.breakfast h1 {
 	color: white;
     text-align: center;
     font-family: Trebuchet MS;
@@ -39,16 +40,90 @@ h1 {
     text-shadow: 5px 10px 15px black;
     
 }
-table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-th, td, tr {
+.breakfast th, td, tr {
     padding: 30px;
     width: 200px;
     font-family: Trebuchet MS;
-    color: black;
+    color: white;
     font-size: 110%;
+}
+.breakfast table {
+	margin: auto;
+    text-align: center;
+    font-size: 120%;
+    text-shadow: 0px 5px 5px black;
+}
+
+.pizzas h1 {
+	color: white;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 300%;
+    text-shadow: 5px 10px 15px black;
+    
+}
+.pizzas th, td, tr {
+    padding: 30px;
+    width: 200px;
+    font-family: Trebuchet MS;
+    color: white;
+    font-size: 110%;
+}
+.pizzas table {
+	margin: auto;
+    text-align: center;
+    font-size: 120%;
+    text-shadow: 0px 5px 5px black;
+}
+.pizzas th {
+	font-style: italic;
+}
+
+.dessert h1 {
+	color: white;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 300%;
+    text-shadow: 5px 10px 15px black;
+    
+}
+.dessert th, td, tr {
+    padding: 30px;
+    width: 200px;
+    font-family: Trebuchet MS;
+    color: white;
+    font-size: 110%;
+}
+.dessert table {
+	margin: auto;
+    text-align: center;
+    font-size: 120%;
+    text-shadow: 0px 5px 5px black;
+}
+
+.drinks h1 {
+	color: white;
+    text-align: center;
+    font-family: Trebuchet MS;
+    font-size: 300%;
+    text-shadow: 5px 10px 15px black;
+    
+}
+.drinks th, td, tr {
+    padding: 30px;
+    width: 200px;
+    font-family: Trebuchet MS;
+    color: white;
+    font-size: 110%;
+}
+.drinks table {
+	margin: auto;
+    text-align: center;
+    font-size: 120%;
+    text-shadow: 0px 5px 5px black;
+}
+.drinks th {
+	font-style: italic;
 }
 </style>
 </head>
@@ -60,12 +135,9 @@ th, td, tr {
   <li><a href="https://aneel100.github.io/location.html">Locations</a></li>
 </ul>
 
+<div class="breakfast">
 <h1>Breakfast</h1>
 <table>
-  <tr>
-    <th>Item</th>
-    <th>Price</th> 
-  </tr>
   <tr>
     <td>Waffles</td>
     <td>$5.00</td>
@@ -79,5 +151,102 @@ th, td, tr {
     <td>$7.00</td>
   </tr>
 </table>
+</div>
+
+<div class="pizzas">
+<h1>Pizzas - Lunch and Dinner</h1>
+<table>
+  <tr>
+    <th>Pizza</th>
+    <th>Small</th>
+    <th>Medium</th>
+    <th>Large</th>
+  </tr>
+  <tr>
+    <td>Cheese Pizza</td>
+    <td>$5.00</td>
+    <td>$6.50</td>
+    <td>$8.00</td>
+  </tr>
+  <tr>
+    <td>Pepperoni Pizza</td>
+    <td>$5.50</td>
+    <td>$7.00</td>
+    <td>$8.50</td>
+  </tr>
+  <tr>
+    <td>Veggie Pizza</td>
+    <td>$5.75</td>
+    <td>$7.50</td>
+    <td>$9.00</td>
+  </tr>
+  <tr>
+    <td>Meatlovers Pizza</td>
+    <td>$6.00</td>
+    <td>$7.50</td>
+    <td>$10.00</td>
+  </tr>
+  <tr>
+    <td>Italian Pizza</td>
+    <td>$5.75</td>
+    <td>$7.25</td>
+    <td>$8.75</td>
+  </tr>
+  <tr>
+    <td>Tandoori Chicken Pizza</td>
+    <td>$5.50</td>
+    <td>$7.00</td>
+    <td>$8.00</td>
+  </tr>
+  <tr>
+    <td>Hawaiian Pizza</td>
+    <td>$5.75</td>
+    <td>$7.25</td>
+    <td>$8.50</td>
+  </tr>
+</table>
+</div>
+
+<div class="dessert">
+<h1>Desserts</h1>
+<table>
+  <tr>
+    <td>Dessert Pizza</td>
+    <td>$7.00</td>
+  </tr>
+  <tr>
+    <td>Cookie</td>
+    <td>$1.00</td>
+  </tr>
+  <tr>
+    <td>Donut</td>
+    <td>$1.00</td>
+  </tr>
+</table>
+</div>
+
+<div class="drinks">
+<h1>Drinks</h1>
+<table>
+  <tr>
+    <th>Drink</th>
+    <th>Small</th>
+    <th>Medium</th>
+    <th>Large</th>
+  </tr>
+  <tr>
+    <td>Fountain Drink</td>
+    <td>$1.50</td>
+    <td>$2.00</td>
+    <td>$3.50</td>
+  </tr>
+  <tr>
+    <td>Coffee</td>
+    <td>$2.00</td>
+    <td>$3.00</td>
+    <td>$4.00</td>
+  </tr>
+</table>
+</div>
 </body>
 </html>
